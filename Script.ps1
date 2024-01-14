@@ -1,6 +1,6 @@
 & tree $PSScriptRoot /f
 
-$names = Get-ChildItem $PSScriptRoot -File | Select-Object -ExpandProperty Name
+$names = Get-ChildItem $PSScriptRoot -Directory | Select-Object -ExpandProperty Name
 
 $patterns = @( # pattern, replace
     @("[`‘`’]", "`'"), 
